@@ -16,6 +16,8 @@ message RecommendRequest {
 
 message RecommendResponse {
     repeated int64 album_ids = 1;
+    int64 next_cursor = 2;
+    bool has_next = 3;
 }
 
 service RecommendService {
