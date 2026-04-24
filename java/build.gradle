@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.2026-snapy'
-version = '0.1.0'
+version = '0.1.4'
 
 repositories {
     mavenCentral()
@@ -50,7 +50,7 @@ publishing {
         maven(MavenPublication) {
             groupId =  'com.github.2026-snapy'
             artifactId = 'proto'
-            version = '0.1.0'
+            version = project.version
 
             from components.java
         }
