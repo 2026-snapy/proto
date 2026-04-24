@@ -3,7 +3,7 @@ syntax = "proto3";
 package feed;
 
 option java_multiple_files = true;
-option java_package = "com.2026.snapy.proto.feed";
+option java_package = "com.snapy.proto.feed";
 option java_outer_classname = "FeedProto";
 
 option go_package = "go/feed;feed";
