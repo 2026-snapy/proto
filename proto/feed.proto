@@ -10,13 +10,13 @@ option go_package = "go/feed;feed";
 
 message RecommendRequest {
     int64 user_id = 1;
-    int64 cursor = 2;
+    optional int64 cursor = 2;
     int32 size = 3;
 }
 
 message RecommendResponse {
     repeated int64 album_ids = 1;
-    int64 next_cursor = 2;
+    optional int64 next_cursor = 2;
     bool has_next = 3;
 }
 
